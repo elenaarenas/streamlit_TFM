@@ -44,7 +44,7 @@ def generador_respuestas(probabilidad):
 
 
 # Setting layout page
-st.set_page_config(layout='wide')
+st.set_page_config(layout='centered')
 
 # Logo upload
 logo = 'palladium_logo_2.png'
@@ -53,7 +53,7 @@ logo = 'palladium_logo_2.png'
 with st.container():
     column_1, column_2 = st.columns([0.8,1])
     with column_1:
-        st.image(logo, width=520)
+        st.image(logo)
     with column_2:
         st.title('Cancelación de reservas hoteleras')
         st.write("Modelo de predicción de cancelaciones de la cadena hotelera Palladium")
